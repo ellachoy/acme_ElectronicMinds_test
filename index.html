@@ -10,43 +10,196 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:wght@100&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/14883d2ece.js" crossorigin="anonymous"></script>
-    <title>Test_ACME_Media_newsSeite</title>
+    <title>ACME News</title>
 </head>
 <body>
     <!-- Media__ News seite -->
     <!-- Navbar -->
     <nav id="navbar">
         <img src="img/nav-logo.jpg" alt="nav__logo">
-        <ul>
-            <li>PRODUCTS</li>
-            <li>INDUSTRIES</li>
-            <li>MEDIA</li>
-            <li>DOWNLOADS</li>
-            <li>CONTACTS</li>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item">PRODUCTS</li>
+            <li class="navbar__menu__item">INDUSTRIES</li>
+            <li class="navbar__menu__item">MEDIA</li>
+            <li class="navbar__menu__item">DOWNLOADS</li>
+            <li class="navbar__menu__item">CONTACTS</li>
         </ul>
+        <!-- Toggle Button -->
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
     </nav>   
   
-    <!-- Home-->
-    <section id="home">
-        <h1 class="home__title">NEWS</h1>
-        <p>
-            Be it the latest news about ACME or white papers on the most interesting explosions, here you will
-            learn everything you need to know about this great corporation! Do not miss anything, otherwise
-            your failure will not be the best.
-        </p>
-        <div>
-            <ul>
-                <li>Media</li>
-                <li><i class="fas fa-solid fa-arrow-right"></i></li>
-                <li>News</li>
-            </ul>
+    <!-- Header-->
+    <section id="header">
+        <div class="header__container">
+            <h1 class="header__title">NEWS</h1>
+            <p class="header__description">
+                Be it the latest news about ACME or white papers on the most
+                interesting explosions, here you will
+                learn everything you need to know about this great
+                corporation! Do not miss anything, otherwise
+                your failure will not be the best.
+            </p>
         </div>
         
+        <ul class="direction">
+            <li>Media</li>
+            <li><i class="fas fa-thin fa-arrow-right"></i></li>
+            <li>News</li>
+        </ul>
+        
+        
     </section>
-    <main>
-        <section>
-            
+    <!-- main -->
+    <main id="news__container">
+        <section class="news__top__container">
+            <article class="news__top">
+                <img src="img/ocean.jpg" alt="ocean">
+                <div class="news">
+                    <h5 class="news__date">23/08/2021</h5>
+                    <h3 class="news__title">THE SMALLEST AND SHALLOWEST WORLD'S MAJOR OCANS</h3>
+                    <p class="news__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim repellendus, deserunt labore sit rerum cum asperiores velit natus minima quis nostrum voluptates. Autem repudiandae amet numquam quibusdam quaerat unde incidunt.
+                    </p>
+                  <button class="new__top-btn">
+                      <i class="fas fa-solid fa-arrow-right"></i>
+                      READ MORE</button>
+                </div>
+            </article>
+            <article class="news__top">
+                <img src="img/bear.jpg" alt="ocean">
+                <div class="news">
+                    <h5 class="news__date">16/06/2021</h5>
+                    <h3 class="news__title">THE POLAR BEAR AS A HYPERCARNIVOROUS BEAR
+                      </h3>
+                    <p class="news__text">Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Enim repellendus,
+                        deserunt labore sit rerum cum asperiores velit nat
+                        minima quis nostrum voluptates. Autem repudiandae
+                        numquam quibusdam quaerat unde incidunt.
+                    </p>
+                    <button class="new__top-btn">
+                        <i class="fas fa-solid fa-arrow-right"></i>
+                        READ MORE</button>
+            </article>
+            <article class="news__top">
+                <img src="img/forest.jpg" alt="ocean">
+                <div class="news">
+                    <h5 class="news__date">04/03/2021</h5>
+                    <h3 class="news__title">HUNDRED OF MORE PRECISE DEFINITIONS OF FOREST ARE USED THROUGHT THE WORLD, INCOPORATIONG FACTORS</h3>
+                    <p class="news__text">Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Enim repellendus,
+                        deserunt labore sit rerum cum asperiores velit nat
+                        minima quis nostrum voluptates. Autem repudiandae
+                        numquam quibusdam quaerat unde incidunt.
+                    </p>
+                    <button class="new__top-btn">
+                        <i class="fas fa-solid fa-arrow-right"></i>
+                        READ MORE</button>
+            </article>
         </section>
+        <section class="news__below__container">
+            <article class="news__below">
+                <div class="news">
+                    <h5 class="news__date">28/12/2021</h5>
+                    <h3 class="news__title">A SPECIES IN THE FAMILY FELDAE AND A MEMBER OF THE GENUS PANTHERA</h3>
+                    <p class="news__text">Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Enim repellendus,
+                        deserunt labore sit rerum cum asperiores velit nat
+                        minima quis nostrum voluptates. Autem repudiandae
+                        numquam quibusdam quaerat unde incidunt.
+                    </p>
+                    <button class="news__below-btn">READ MORE</button>
+            </article>
+            <article class="news__below">
+                <div class="news">
+                    <h5 class="news__date">21/01/2021</h5>
+                    <h3 class="news__title">ARCHEOLOGICAL EVIDENCE OF THE EARLIEST HUMAN FORAGING</h3>
+                    <p class="news__text">Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Enim repellendus,
+                        deserunt labore sit rerum cum asperiores velit nat
+                        minima quis nostrum voluptates. Autem repudiandae
+                        numquam quibusdam quaerat unde incidunt.
+                    </p>
+                    <button class="news__below-btn">READ MORE</button>
+            </article>
+            <article class="news__below">
+                <div class="news">
+                    <h5 class="news__date">21/01/2021</h5>
+                    <h3 class="news__title">NOT VERY HIGH BUT ARE VERY STEEP PLACES:THE SCANDINAVIAN MOUNTAINS OR THE SCANDES MOUNTAINS RANGE</h3>
+                    <p class="news__text">Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Enim repellendus,
+                        deserunt labore sit rerum cum asperiores velit na
+                        minima quis nostrum voluptates. Autem repudiandae
+                        numquam quibusdam quaerat unde incidunt.
+                    </p>
+                    <button class="news__below-btn">READ MORE</button>
+            </article>
+            <article class="news__below">
+                <div class="news">
+                    <h5 class="news__date">15/04/2021</h5>
+                    <h3 class="news__title">ACCUMULATION OF SNOW, AREA OF INTERCONNECTED GLACIERS, FOUND IN A MOUNTAINOUS REGION OVERRIDING UNDERLYING SHAPES</h3>
+                    <p class="news__text">Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Enim repellendus,
+                        deserunt labore sit rerum cum asperiores velit na
+                        minima quis nostrum voluptates. Autem repudiandae
+                        numquam quibusdam quaerat unde incidunt.
+                    </p>
+                    <button class="news__below-btn">READ MORE</button>
+            </article>
+            <article class="news__below">
+                <div class="news">
+                    <h5 class="news__date">23/03/2021</h5>
+                    <h3 class="news__title">WORLD LITERATURE, INTERNATIONAL COOPERATION AGREEMENTS, SECURING WORLD HERITAGE SITES, DEFFENDING HUMAN RIGHTS, BRIDGING THE WORLDWIDE DIGITAL DIVIDE, AND CREATING INCLUSIVE KNOWLEDGE SOCIETIES</h3>
+                    <p class="news__text">Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Enim repellendus,
+                        deserunt labore sit rerum cum asperiores velit na
+                        minima quis nostrum voluptates. Autem repudiandae
+                        numquam quibusdam quaerat unde incidunt.
+                    </p>
+                    <button class="news__below-btn">READ MORE</button>
+            </article>
+        </section>
+        <aside class="contact">
+            <h1 class="contact__title">CONTACT</h1>
+            <div class="contact__person__women">
+                <img src="img/contact_W.jpg" alt="contact_W">
+                <h2 class="contact__person__name">JANE DOU</h2>
+                <h5 class="contact__person__position">MARKETING & COMMUNICATION</h5>
+                <ul>
+                   <li><i class="fas fa-thin fa-phone"></i>
+                    <a href="#">+49 174 358 645 25</a>
+                   </li>
+                   <li><i class="fas fa-thin fa-clock"></i>
+                    Mo/Tu/Fr: 08:00 a.m. -05:30 p.m.
+                   </li>
+                   <li><i class="fas fa-thin fa-at"></i>
+                    <a href="#">JANE.DOE@ACME.DE</a>
+                   </li>
+                   <li><i class="fas fa-thin fa-location-dot"></i>
+                    ACME GmbH <br/>
+                    Die Str.123 <br/>
+                    57074 Siegen <br/>
+                    Germany
+                   </li>
+                </ul>
+            </div>
+            <div class="contact__person__men">
+                <img src="img/contact_M.jpg" alt="contact_M">
+                <h2 class="contact__person__name">MARK MUSTERMAN</h2>
+                <h5 class="contact__person__position">MARKETING ASSISTENT</h5>
+                <ul>
+                    <li><i class="fas fa-thin fa-phone"></i>
+                        <a href="#">+49 174 358 645 25</a>
+                    </li>
+                    <li><i class="fas fa-thin fa-clock"></i>
+                        Mo/Tu/Fr: 08:00 a.m. -05:30 p.m.
+                    </li>
+                </ul>
+            </div>
+
+
+        </aside>
     </main>
 
 </body>
