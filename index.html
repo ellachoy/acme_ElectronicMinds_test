@@ -29,7 +29,7 @@
             <i class="fas fa-bars"></i>
         </button>
     </nav>   
-  
+
     <!-- Header-->
     <section id="header">
         <div class="header__container">
@@ -61,9 +61,9 @@
                     <h3 class="news__title">THE SMALLEST AND SHALLOWEST WORLD'S MAJOR OCANS</h3>
                     <p class="news__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim repellendus, deserunt labore sit rerum cum asperiores velit natus minima quis nostrum voluptates. Autem repudiandae amet numquam quibusdam quaerat unde incidunt.
                     </p>
-                  <button class="new__top-btn">
-                      <i class="fas fa-solid fa-arrow-right"></i>
-                      READ MORE</button>
+                    <button class="new__top-btn">
+                        <i class="fas fa-solid fa-arrow-right"></i>
+                        READ MORE</button>
                 </div>
             </article>
             <article class="news__top">
@@ -71,7 +71,7 @@
                 <div class="news">
                     <h5 class="news__date">16/06/2021</h5>
                     <h3 class="news__title">THE POLAR BEAR AS A HYPERCARNIVOROUS BEAR
-                      </h3>
+                    </h3>
                     <p class="news__text">Lorem ipsum, dolor sit amet
                         consectetur adipisicing elit. Enim repellendus,
                         deserunt labore sit rerum cum asperiores velit nat
@@ -81,6 +81,7 @@
                     <button class="new__top-btn">
                         <i class="fas fa-solid fa-arrow-right"></i>
                         READ MORE</button>
+                </div>
             </article>
             <article class="news__top">
                 <img src="img/forest.jpg" alt="ocean">
@@ -96,6 +97,7 @@
                     <button class="new__top-btn">
                         <i class="fas fa-solid fa-arrow-right"></i>
                         READ MORE</button>
+                </div>
             </article>
         </section>
         <section class="news__below__container">
@@ -110,6 +112,7 @@
                         numquam quibusdam quaerat unde incidunt.
                     </p>
                     <button class="news__below-btn">READ MORE</button>
+                </div>
             </article>
             <article class="news__below">
                 <div class="news">
@@ -122,6 +125,7 @@
                         numquam quibusdam quaerat unde incidunt.
                     </p>
                     <button class="news__below-btn">READ MORE</button>
+                </div>
             </article>
             <article class="news__below">
                 <div class="news">
@@ -134,6 +138,7 @@
                         numquam quibusdam quaerat unde incidunt.
                     </p>
                     <button class="news__below-btn">READ MORE</button>
+                </div>
             </article>
             <article class="news__below">
                 <div class="news">
@@ -146,6 +151,7 @@
                         numquam quibusdam quaerat unde incidunt.
                     </p>
                     <button class="news__below-btn">READ MORE</button>
+                </div>
             </article>
             <article class="news__below">
                 <div class="news">
@@ -158,6 +164,7 @@
                         numquam quibusdam quaerat unde incidunt.
                     </p>
                     <button class="news__below-btn">READ MORE</button>
+                </div>
             </article>
         </section>
         <aside class="contact">
@@ -167,21 +174,21 @@
                 <h2 class="contact__person__name">JANE DOU</h2>
                 <h5 class="contact__person__position">MARKETING & COMMUNICATION</h5>
                 <ul>
-                   <li><i class="fas fa-thin fa-phone"></i>
-                    <a href="#">+49 174 358 645 25</a>
-                   </li>
-                   <li><i class="fas fa-thin fa-clock"></i>
-                    Mo/Tu/Fr: 08:00 a.m. -05:30 p.m.
-                   </li>
-                   <li><i class="fas fa-thin fa-at"></i>
-                    <a href="#">JANE.DOE@ACME.DE</a>
-                   </li>
-                   <li><i class="fas fa-thin fa-location-dot"></i>
+                    <li><i class="fas fa-thin fa-phone"></i>
+                        <a href="#">+49 174 358 645 25</a>
+                    </li>
+                    <li><i class="fas fa-thin fa-clock"></i>
+                            Mo/Tu/Fr: 08:00 a.m. -05:30 p.m.
+                    </li>
+                    <li><i class="fas fa-thin fa-at"></i>
+                        <a href="#">JANE.DOE@ACME.DE</a>
+                    </li>
+                    <li><i class="fas fa-thin fa-location-dot"></i>
                     ACME GmbH <br/>
                     Die Str.123 <br/>
                     57074 Siegen <br/>
                     Germany
-                   </li>
+                    </li>
                 </ul>
             </div>
             <div class="contact__person__men">
@@ -197,10 +204,57 @@
                     </li>
                 </ul>
             </div>
-
-
         </aside>
     </main>
+    <section id="contact__form">
+        <div>
+            <h2>Do you have any question?</h2>
+            <form action="#">
+                <label for="contact__form__name">Name</label> <br/>
+                <input type="text"><br />
+                <label for="contact__form__email">Email</label><br />
+                <input type="text"><br />
+                <label for="contact__form__phone">Phone(optional)</label><br />
+                <input type="text"><br />
+                <label for="coselect__countryntact__form__country">Country</label><br />
+                <select name="select__country">
+                    <option value=""></option>
+                    <option value="Germany">Germany</option>
+                    <option value="Germany">South Korea</option>
+                    <option value="Germany">USA</option>
+                    <option value="Germany">Greece</option>
+                    <option value="Germany">Canada</option>
 
+
+                    <br />
+            </form>
+            <label for="contact__form__message">Your Message</label> <br />
+            <textarea rows="4" cols="50" name="comment" form="usrform">
+            </textarea>
+        </div>
+        <div class="contact__check">
+            <div class="contact--checkbox">
+                <input type="checkbox">
+                <span>I hereby consent to the processing of my data in according with the
+                    <a href="#">privacy information</a>.
+                </span>
+            </div>
+            <button class="contact__form__send">
+                <i class="fas fa-solid fa-arrow-right"></i> SEND
+            </button>
+        </div>
+    </section>
+    <footer>
+        <div class="rights">
+            <a href="#">Legal Notice</a>
+            <a href="#">Privacy</a>
+        </div>
+        <div class="contact__links">
+            <a href="#"><i class=" fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class=" fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class=" fa-brands fa-twitter-square"></i></a>
+        </div>
+        © 2021 ACME.part of the <a href="#">ACME Group</a>
+    </footer>
 </body>
 </html>
