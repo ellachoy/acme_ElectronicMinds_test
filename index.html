@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="./css/style.css">
     <script src="main.js" defer></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:wght@100&display=swap"
@@ -15,8 +15,8 @@
 <body>
     <!-- Media__ News seite -->
     <!-- Navbar -->
-    <nav id="navbar">
-        <img src="img/nav-logo.jpg" alt="nav__logo">
+    <nav id="navbar" class="distance">
+        <img src="img/nav-logo.jpg" alt="nav__logo" class="navbar__logo">
         <ul class="navbar__menu">
             <li class="navbar__menu__item">PRODUCTS</li>
             <li class="navbar__menu__item">INDUSTRIES</li>
@@ -32,31 +32,32 @@
 
     <!-- Header-->
     <section id="header">
-        <div class="header__container">
+        <div class="header__container distance">
             <h1 class="header__title">NEWS</h1>
             <p class="header__description">
                 Be it the latest news about ACME or white papers on the most
-                interesting explosions, here you will
+                interesting explosions, here you will 
                 learn everything you need to know about this great
                 corporation! Do not miss anything, otherwise
                 your failure will not be the best.
             </p>
         </div>
         
-        <ul class="direction">
-            <li>Media</li>
+        <ul class="direction distance">
+            <li>MEDIA</li>
             <li><i class="fas fa-thin fa-arrow-right"></i></li>
-            <li>News</li>
+            <li class="direction__actual">News</li>
         </ul>
         
         
     </section>
     <!-- main -->
-    <main id="news__container">
-        <section class="news__top__container">
-            <article class="news__top">
-                <img src="img/ocean.jpg" alt="ocean">
-                <div class="news">
+    <main id="news__container" class="distance">
+        <div class="news__container__left">        
+            <section class="news__top__container">
+                <article class="news__top">
+                    <img src="img/ocean.jpg" alt="ocean">
+                    <div class="news">
                     <h5 class="news__date">23/08/2021</h5>
                     <h3 class="news__title">THE SMALLEST AND SHALLOWEST WORLD'S MAJOR OCANS</h3>
                     <p class="news__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim repellendus, deserunt labore sit rerum cum asperiores velit natus minima quis nostrum voluptates. Autem repudiandae amet numquam quibusdam quaerat unde incidunt.
@@ -65,27 +66,27 @@
                         <i class="fas fa-solid fa-arrow-right"></i>
                         READ MORE</button>
                 </div>
-            </article>
-            <article class="news__top">
-                <img src="img/bear.jpg" alt="ocean">
-                <div class="news">
-                    <h5 class="news__date">16/06/2021</h5>
-                    <h3 class="news__title">THE POLAR BEAR AS A HYPERCARNIVOROUS BEAR
-                    </h3>
-                    <p class="news__text">Lorem ipsum, dolor sit amet
+                </article>
+                <article class="news__top">
+                    <img src="img/bear.jpg" alt="ocean">
+                    <div class="news">
+                        <h5 class="news__date">16/06/2021</h5>
+                        <h3 class="news__title">THE POLAR BEAR AS A HYPERCARNIVOROUS BEAR
+                        </h3>
+                        <p class="news__text">Lorem ipsum, dolor sit amet
                         consectetur adipisicing elit. Enim repellendus,
                         deserunt labore sit rerum cum asperiores velit nat
                         minima quis nostrum voluptates. Autem repudiandae
                         numquam quibusdam quaerat unde incidunt.
-                    </p>
-                    <button class="new__top-btn">
-                        <i class="fas fa-solid fa-arrow-right"></i>
+                        </p>
+                        <button class="new__top-btn">
+                           <i class="fas fa-solid fa-arrow-right"></i>
                         READ MORE</button>
-                </div>
-            </article>
-            <article class="news__top">
-                <img src="img/forest.jpg" alt="ocean">
-                <div class="news">
+                    </div>
+                </article>
+                <article class="news__top">
+                    <img src="img/forest.jpg" alt="ocean">
+                    <div class="news">
                     <h5 class="news__date">04/03/2021</h5>
                     <h3 class="news__title">HUNDRED OF MORE PRECISE DEFINITIONS OF FOREST ARE USED THROUGHT THE WORLD, INCOPORATIONG FACTORS</h3>
                     <p class="news__text">Lorem ipsum, dolor sit amet
@@ -98,9 +99,9 @@
                         <i class="fas fa-solid fa-arrow-right"></i>
                         READ MORE</button>
                 </div>
-            </article>
-        </section>
-        <section class="news__below__container">
+                </article>
+            </section>
+            <section class="news__below__container">
             <article class="news__below">
                 <div class="news">
                     <h5 class="news__date">28/12/2021</h5>
@@ -166,8 +167,9 @@
                     <button class="news__below-btn">READ MORE</button>
                 </div>
             </article>
-        </section>
-        <aside class="contact">
+            </section>
+        </div>
+        <aside class="contact distance">
             <h1 class="contact__title">CONTACT</h1>
             <div class="contact__person__women">
                 <img src="img/contact_W.jpg" alt="contact_W">
@@ -207,7 +209,7 @@
         </aside>
     </main>
     <section id="contact__form">
-        <div>
+        <div class="distance">
             <h2>Do you have any question?</h2>
             <form action="#">
                 <label for="contact__form__name">Name</label> <br/>
@@ -232,7 +234,7 @@
             <textarea rows="4" cols="50" name="comment" form="usrform">
             </textarea>
         </div>
-        <div class="contact__check">
+        <div class="contact__check distance">
             <div class="contact--checkbox">
                 <input type="checkbox">
                 <span>I hereby consent to the processing of my data in according with the
@@ -244,7 +246,7 @@
             </button>
         </div>
     </section>
-    <footer>
+    <footer class="distance">
         <div class="rights">
             <a href="#">Legal Notice</a>
             <a href="#">Privacy</a>

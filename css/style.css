@@ -1,0 +1,121 @@
+:root {
+  --color-white: rgb(255, 255, 255);
+  --color-orange: rgb(249, 178, 0);
+  --color-orange-background: rgb(239, 177, 55);
+  --color-orange-underline: rgb(236, 161, 0);
+  --color-orange-text: rgb(238, 192, 107);
+  --color-gray-light: rgb(237, 239, 238);
+  --color-grey: rgb(193, 196, 195);
+  --color-green: rgb(0, 70, 53);
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+.distance {
+  padding: 10px 100px;
+}
+
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+}
+
+h2 {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navbar .navbar__logo {
+  width: 150px;
+}
+#navbar .navbar__menu {
+  display: flex;
+}
+#navbar .navbar__menu__item {
+  padding: 8px 12px;
+  font-weight: var(--weight-semi-bold);
+}
+#navbar .navbar__toggle-btn {
+  display: none;
+}
+
+#header {
+  background: url("../img/bild_jungle.jpeg") center/cover no-repeat;
+}
+#header .header__title {
+  color: var(--color-orange);
+  margin-bottom: 0;
+}
+#header .header__description {
+  color: white;
+  width: 70%;
+}
+#header .direction {
+  background-color: var(--color-orange);
+  display: flex;
+}
+#header .direction li {
+  padding: 3px 8px;
+  font-size: var(--font-micro);
+  font-weight: 100;
+}
+#header .direction .direction__actual {
+  color: white;
+}
+
+#news__container {
+  display: flex;
+}
+#news__container .news__top__container .news__top {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */
