@@ -122,6 +122,13 @@ p {
   font-weight: var(--weight-semi-bold);
 }
 #navbar .navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  background-color: var(--color-orange);
+  font-size: 20px;
+  color: #fff;
+  padding: 5px 7px;
   display: none;
 }
 
@@ -308,6 +315,48 @@ p {
 #footer .rights .text__orange {
   color: var(--color-orange);
   text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
+  .distance {
+    padding: 15px;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 10px;
+  }
+  #navbar .navbar__logo {
+    width: 100px;
+  }
+  #navbar .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+    display: none;
+  }
+  #navbar .navbar__toggle-btn {
+    display: block;
+    background-color: var(--color-orange);
+    color: #fff;
+    font-size: var(--font-medium);
+    top: 16px;
+    right: 16px;
+  }
+
+  #news__container {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
