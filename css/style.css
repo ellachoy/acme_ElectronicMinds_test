@@ -352,7 +352,7 @@ p {
     text-align: center;
     width: 100%;
     padding-left: 0;
-    display: block;
+    display: none;
   }
   #navbar .nabvar__menu.open {
     display: block;
