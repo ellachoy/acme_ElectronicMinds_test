@@ -8,6 +8,7 @@
   --color-grey: rgb(193, 196, 195);
   --color-light-grey: rgb(237, 239, 238);
   --color-green: rgb(0, 70, 53);
+  --color-footer-background:rgb(46, 52, 50);
   --font-large: 48px;
   --font-medium: 28px;
   --font-regular: 18px;
@@ -61,6 +62,13 @@ button {
 .clamp {
   display: -webkit-box;
   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.short {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
 }
@@ -98,6 +106,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 0;
 }
 #navbar .navbar__logo {
   width: 150px;
@@ -105,7 +114,10 @@ p {
 #navbar .navbar__menu {
   display: flex;
 }
-#navbar .navbar__menu__item {
+#navbar .navbar__menu .text__orange {
+  color: var(--color-orange);
+}
+#navbar .navbar__menu .navbar__menu__item {
   padding: 8px 12px;
   font-weight: var(--weight-semi-bold);
 }
@@ -157,11 +169,30 @@ p {
 }
 #news__container .news__container__left .news__top__container .news__top .news__top__img {
   width: 200px;
-  height: 150px;
+  height: 170px;
 }
 #news__container .news__container__left .news__top__container .news__top .new__top-btn {
-  color: red;
   float: right;
+}
+#news__container .news__container__left .news__top__container .news__top .short {
+  margin-bottom: 2px;
+}
+#news__container .news__container__left .news__below__container {
+  padding-top: 60px;
+}
+#news__container .news__container__left .news__below__container .news__below {
+  margin: 15px 0 0 0;
+}
+#news__container .news__container__left .news__below__container .news__below .news {
+  border-bottom: 2px solid var(--color-light-grey);
+  padding-bottom: 25px;
+}
+#news__container .news__container__left .news__below__container .news__below .news__below-btn {
+  color: var(--color-orange-text);
+  text-decoration: underline;
+}
+#news__container .news__container__left .news__below__container .news__below .end {
+  border-bottom: 0;
 }
 #news__container .contact img {
   width: 100%;
@@ -176,22 +207,107 @@ p {
 #news__container .contact .fas {
   color: var(--color-grey);
   margin-right: 10px;
+  font-size: 18px;
+}
+#news__container .contact .text__orange {
+  color: var(--color-orange-text);
+  text-decoration: underline;
 }
 #news__container .contact .contact__title {
   color: var(--color-light-grey);
   margin: 0;
+}
+#news__container .contact .contact__adress {
+  display: flex;
+}
+#news__container .contact .contact__person__name {
+  color: black;
 }
 #news__container .contact .contact__person__women {
   padding: 25px;
   background-color: var(--color-light-grey);
   margin-bottom: 20px;
 }
-#news__container .contact .contact__person__women .contact__person__name {
-  color: black;
-}
 #news__container .contact .contact__person__men {
   background-color: var(--color-light-grey);
   padding: 25px;
+}
+
+#contact__form__container {
+  background: url("../img/bild_jungle.jpeg") center/cover no-repeat;
+  color: #fff;
+  margin-top: 20px;
+}
+#contact__form__container .contact__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#contact__form__container .contact__form .contact__form__left input[type=text], #contact__form__container .contact__form .contact__form__left select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+#contact__form__container .contact__form .contact__form__left .test {
+  display: none;
+}
+#contact__form__container .contact__form .contact__form__right {
+  width: 100%;
+  height: 100%;
+}
+
+.contact__check {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.contact__check .contact--checkbox {
+  display: flex;
+  font-size: var(--font-micro);
+}
+.contact__check .contact--checkbox input[type=checkbox] {
+  background-color: transparent;
+  margin-right: 10px;
+}
+.contact__check .contact--checkbox .text__orange {
+  color: var(--color-orange);
+  text-decoration: underline;
+}
+.contact__check .contact__form__send {
+  background-color: var(--color-orange);
+  padding: 8px;
+  font-size: 10px;
+}
+.contact__check .contact__form__send .fas {
+  color: #fff;
+  margin-right: 5px;
+}
+
+#footer {
+  background-color: var(--color-footer-background);
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-micro);
+}
+#footer .rights_note a {
+  color: var(--color-orange);
+  text-decoration: underline;
+  margin-right: 10px;
+}
+#footer .fas {
+  font-size: 15px;
+  color: white;
+  background-color: var(--color-orange);
+  padding: 5px;
+  margin-right: 5px;
+}
+#footer .rights {
+  color: #fff;
+}
+#footer .rights .text__orange {
+  color: var(--color-orange);
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
