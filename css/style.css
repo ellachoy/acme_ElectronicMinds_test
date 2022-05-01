@@ -326,6 +326,15 @@ p {
     --font-micro: 12px;
   }
 
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: var(--font-medium);
+    margin: 10px 0 10px 0;
+  }
+
   .distance {
     padding: 15px;
   }
@@ -343,7 +352,10 @@ p {
     text-align: center;
     width: 100%;
     padding-left: 0;
-    display: none;
+    display: block;
+  }
+  #navbar .nabvar__menu.open {
+    display: block;
   }
   #navbar .navbar__toggle-btn {
     display: block;
@@ -354,8 +366,71 @@ p {
     right: 16px;
   }
 
+  #header .header__container .header__description {
+    width: 100%;
+  }
+  #header .direction {
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+
   #news__container {
     flex-direction: column;
+  }
+  #news__container .news {
+    width: 100%;
+    margin: 0;
+  }
+  #news__container .news__container__left .news__top__container .news__top {
+    flex-direction: column;
+    border-bottom: 1px solid lightgrey;
+    padding: 15px 0;
+    margin: 0px 0 0 0;
+  }
+  #news__container .news__container__left .news__top__container .news__top .news__top__img {
+    display: none;
+  }
+  #news__container .news__container__left .news__top__container .news__top .new__top-btn {
+    color: var(--color-orange-text);
+    text-decoration: underline;
+    background-color: transparent;
+    float: left;
+    padding: 0;
+  }
+  #news__container .news__container__left .news__top__container .news__top .new__top-btn .fas {
+    display: none;
+  }
+  #news__container .news__container__left .news__top__container .news__top .news__text {
+    display: none;
+  }
+  #news__container .news__container__left .news__below__container {
+    color: yellow;
+    padding-top: 0;
+  }
+  #news__container .news__container__left .news__below__container .news__below .news__text {
+    display: none;
+  }
+
+  #contact__form__container .contact__form .contact__form__right textarea {
+    width: 100%;
+    height: 20vh;
+  }
+  #contact__form__container .contact__check {
+    flex-direction: column;
+    padding: 10px 0 30px 0;
+  }
+  #contact__form__container .contact__check .contact__form__send {
+    position: absolute;
+    right: 15px;
+    top: 3400px;
+  }
+
+  #footer {
+    flex-wrap: wrap;
+  }
+  #footer .rights {
+    padding: 12px 0 0 0;
+    margin: 0 auto;
   }
 }
 
